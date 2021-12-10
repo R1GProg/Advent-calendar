@@ -5,6 +5,9 @@ function buildCalendar(containerId) {
     frame.setAttribute("class", "calendar-frame");
     const days = [];
     for (let i = 1; i <= 24; i++) {
+      days.push(i);
+    }
+    days.forEach((i) => {
       const day = document.createElement("div");
       day.setAttribute("class", "calendar-day");
       day.innerHTML = i;
@@ -15,7 +18,7 @@ function buildCalendar(containerId) {
         //delete day.onclick;
       }
       frame.appendChild(day);
-    }
+    });
     container.appendChild(frame);
   }
   

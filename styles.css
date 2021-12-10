@@ -1,0 +1,25 @@
+h1 {
+    color: blue;
+  }
+  
+  div.calendar-frame {
+    background-color: #faa;
+    border: 5px solid red;
+    overflow: auto;
+  }
+  
+  div.calendar-day {
+    background-color: #fee;
+    border: 3px solid blue;
+    margin: 10px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+  }
+  
+  div.calendar-day.open {
+    background-color: #888;
+    cursor: default;
+  }

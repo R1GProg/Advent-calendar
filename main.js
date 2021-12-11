@@ -15,7 +15,7 @@ function buildCalendar(containerId) {
         console.log("asdasdssad", i);
         day.innerHTML = "X";
         day.setAttribute("class", "calendar-day open");
-        //delete day.onclick;
+        day.onclick= null;
       }
       frame.appendChild(day);
     });

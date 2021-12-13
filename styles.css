@@ -1,11 +1,31 @@
-h1 {
+  h1 {
     color: blue;
   }
-  
+
+  button{
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 4px;
+    font-size:24px;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+    margin:10px;
+  }
+
+  button:hover{
+    background-color: blue;
+    color:white;
+  }
+
+  button:active{
+    transform: translateY(5px);
+  }
+
   div.calendar-frame {
     background-color: #faa;
     border: 5px solid red;
     overflow: auto;
+    margin: 5px;
   }
   
   div.calendar-day {
@@ -17,9 +37,26 @@ h1 {
     height: 50px;
     float: left;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
   }
-  
+
+  div.calendar-day:hover {
+    background-color: #faa; /*hover krāsa*/
+    color: white; /*text krāsa hover laikā*/
+  }
+
+  div.calendar-day:active {
+    transform: translateY(10px);
+  }
+
   div.calendar-day.open {
     background-color: #888;
     cursor: not-allowed;
+  }
+  div.calendar-day.open:hover {
+    background-color: #888; /*atstāt tādu pašu kā .open background-color*/
+    color: white;
   }
